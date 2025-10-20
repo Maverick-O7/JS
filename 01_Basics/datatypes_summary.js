@@ -43,3 +43,30 @@ console.log(typeof outsideTemp); //null returns data type as "object"
 console.log(typeof myFunction);
 console.log(typeof heroes);
 console.log(typeof anotherId);
+
+
+/*      Memory       */
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myName = "pqr"
+let anotherName = myName
+anotherName = "xyz"
+
+console.log(myName);
+console.log(anotherName);
+console.table([myName, anotherName])
+
+let user1 = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+console.log(user1.email);
+
+
+let user2 = user1 
+
+user2.email = "user2@google.com"
+
+console.table([user2.email,user1.email])
