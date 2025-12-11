@@ -1,4 +1,4 @@
-let score = "44"
+let score = 33
 
 console.log(typeof score);
 console.log(typeof (score));
@@ -10,6 +10,7 @@ console.log(valueInNumber);
 
 // "44" => 44
 // "44abc" => NaN (not a number)
+// Nan => number type
 // true => 1; false => 0
 
 let isLoggedIn = ""
@@ -59,3 +60,18 @@ console.log(+"");
 let gameCounter = 100
 gameCounter++
 console.log(gameCounter);
+
+++gameCounter
+console.log(gameCounter);
+
+//prefix - postfix
+
+let x = 3;
+const y = x++;
+
+console.log(x, y);
+
+let a = 3;
+const b = ++a;
+
+console.log(a, b);
