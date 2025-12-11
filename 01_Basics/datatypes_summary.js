@@ -70,3 +70,7 @@ let user2 = user1
 user2.email = "user2@google.com"
 
 console.table([user2.email,user1.email])
+
+// stack returns a copy of the variable if accessed, hence change in value does not affect
+// across the variables. However, heap memory returns a reference of that variable. Hence,
+// change in value affects across all variables if accessed.
